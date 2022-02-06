@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+</head>
+<style>
+    .container{
+        display: grid; 
+        /* grid-template-columns: 300px 100px 100px; 
+        pixel counts are the width of the columns*/
+        /* grid-template-columns: auto 300px 100px; */
+        /* grid-template-columns: 1fr 2fr 3fr; 
+        this is used to divid the viewport area width in fractions to give it to the columns*/
+        grid-template-columns: repeat(3, 100px);
+
+        grid-gap: 20px; /*use to allocate gap in between the elements*/
+    }
+    #item{
+        height: 100px; width: 100px; 
+        background-color: brown; color: white;
+        margin: 0px; border: 2px solid black;
+    }
+</style>
+<body>
+    <div class="container">
+     <div id="item" class="item1">This is the item1</div> 
+     <!-- this are the gris items where as "".container" class is the grid -->
+     <div id="item" class="item2">This is the item2</div>
+     <div id="item" class="item3">This is the item3</div>
+     <div id="item" class="item4">This is the item4</div>
+     <div id="item" class="item5">This is the item5</div>
+     <div id="item" class="item6">This is the item6</div>
+     <div id="item" class="item7">This is the item7</div>
+     <div id="item" class="item8">This is the item8</div>
+     <div id="item" class="item9">This is the item9</div>
+    </div>
+</body>
+</html>

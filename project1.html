@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First project in a while</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap" rel="stylesheet">
+</head>
+<style>    
+#first_overhead{
+/* margin-top: 12px;  */
+ height: 53px; width: 100%; 
+  position: relative; bottom: 12px;
+/* display: flex; flex-direction: row;   */
+}
+#navigationbar{
+display:flex; flex-direction: row; 
+justify-content: space-evenly; align-items: center;
+}
+#p{
+   font-size: 32px; font-family: 'Lora', serif;  
+   background: linear-gradient(
+            to right, #ee8139, #cc1414);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;        
+}
+.items{
+    font-family: 'Roboto Slab', serif; font-size: 20px;
+    background: linear-gradient(
+            to right, #1e446b, #4bbcfd);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    transition-property: all; transition-duration: 0.37s;
+    transition-timing-function:ease-in-out ;
+    /* transition-delay: 0.04s;  */
+}
+.items:hover{
+    font-size: 24px; font-family: 'Oswald', sans-serif;
+    text-decoration: underline;  cursor: pointer;    
+    }
+#body{
+    height: 360px; 
+    position: relative; bottom: 12px; display: flex; flex-direction: row; justify-content: space-between;
+   }
+#logo{
+    width: 500px; position: relative; left: 80px;
+    display: flex; justify-content: center; 
+    align-items: center;
+}
+#logo img{
+    width: 410px; height: 299px;
+    animation-name: logo; animation-duration: 1.25s;
+    animation-timing-function: ease-in;
+}
+@keyframes logo{
+    from{
+        width: 247px; height: 180px; opacity: -1;
+    }
+    to{}
+}
+#intro_text{
+    width: 700px; 
+    font-size: 41px; font-family: 'Roboto Slab', serif;
+    display: flex; flex-direction: column; 
+    justify-content: center; align-items: center;
+    background: linear-gradient(
+            to right, #22be82, #1d61df,
+             #1391a1, #eedd44);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    animation-name: bodytext; animation-duration: 1.12s;
+    animation-timing-function: ease-in;   
+}
+#intro_text span{
+    transition-property: all; 
+    transition-duration:0.33s; transition-delay: 0.12ms;
+}
+#intro_text span:hover{
+    font-size: 52px; 
+}
+@keyframes bodytext{
+    from{
+opacity: -1;  font-size: 21px;
+    }
+    to{}
+}
+#body_material{
+height: 250px; margin-top: 12px; display: flex;
+flex-direction: row; position: relative; right: 13px;
+width: 100%; 
+}
+#item-1{
+    width: 33%; animation-name: item-1;
+    animation-duration: 1.24s; margin: 0px; animation-timing-function: ease-in;
+}
+@keyframes item-1{
+    from{
+        width: 200px; height: 108px; opacity: -1;
+    }
+    to{}
+}
+#item-1:hover{
+font-size: 1.2ex; text-decoration: underline;
+
+}
+#heading1{
+    font-family: 'Josefin Sans', sans-serif; font-size: 24px; background-color: rgb(116, 206, 212);
+    display: flex; justify-content: center;
+    align-items: center; border-radius: 12px;
+}
+#heading1:hover{
+    border: 3px solid rgb(16, 112, 202);
+border-radius: 4px;
+}
+#para1{
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center; 
+    margin-top: 18px; font-size: 19px; 
+    font-family: 'Quicksand', sans-serif;
+}
+#item-2{
+    width: 33%; animation-name: item-2;
+    animation-duration: 2.20s; margin: 0px;
+    animation-timing-function: ease-out;
+}
+@keyframes item-2{
+    from{
+        width: 200px; height: 108px; opacity: -1;
+    }
+  to{}
+}
+#item-2:hover{
+    font-size: 1.2ex; text-decoration: underline;
+    border: 3px solid brown; border-radius: 4px;
+}
+#heading2{ margin: auto;
+    font-family: 'Josefin Sans', sans-serif; font-size: 24px; background-color: rgb(209, 133, 97);
+    display: flex; justify-content: center;
+    border-radius: 12px;
+    height: 48px; align-items: center; width: 85%;
+}
+#heading2:hover{
+   
+}
+#para2{
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center; 
+    margin-top: 18px; font-size: 19px; 
+    font-family: 'Quicksand', sans-serif;
+}
+#item-3{
+    width: 33%; animation-name: item-3;
+    animation-duration: 3.68s; margin: 0px;
+    animation-timing-function: ease-out;
+}
+@keyframes item-3{
+    from{
+        width: 200px; height: 108px; opacity: -1;
+    }
+    to{}
+}
+#item-3:hover{
+    font-size: 1.2ex; text-decoration: underline;
+}
+#heading3{ font-family: 'Josefin Sans', sans-serif; font-size: 24px; background-color: rgb(97, 209, 106);
+    display: flex; justify-content: center;
+height: 48px; align-items: center;  border-radius: 12px;
+}
+#heading3:hover{
+    border: 3px solid green; border-radius: 4px;
+}
+#para3{ display: flex; flex-direction: column;
+    justify-content: center; align-items: center; 
+    margin-top: 18px; font-size: 19px; 
+    font-family: 'Quicksand', sans-serif;}
+#bottom{
+    height: 180px; background-color: rgb(106, 106, 190);
+    color: whitesmoke; display: flex;
+    flex-direction: column; font-size: 13px;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    justify-content: center; align-items: center;
+}
+@media  (min-width:768px) and (max-width: 1024px){
+    #logo img{
+        width: 350px; height: 249px;
+    }
+    #logo{
+        position: relative; left: 22px;
+    }
+}
+@media (min-width:482px) and (max-width:768px){
+  #first_overhead{
+      font-size: 12px;
+  }
+}
+</style>
+<body>
+    <div id="first_overhead">
+            <div id="navigationbar">
+                <ul id="p">Welcome!</ul>
+                <ul class="items">Projects</ul>
+                <ul class="items">
+                   <a href="https://github.com/Chakrabortysoura/My-html-projects" target="_blank"></a> Github Page</ul>
+                <ul class="items">
+                   <a href="" target="_blank"></a> Contact Me</ul>
+                <ul class="items">
+                   <a href="social_links.html" target="_blank"></a> Social links</ul>
+                </div>        
+    </div>
+<div id="body">
+<div id="logo">
+<img src="css.png" alt="error loading">
+</div>
+<div id="intro_text">
+    <span>Professional Web <br></span>
+    <span> Development with</span>
+    <span>HTML, CSS, <br></span>
+    <span>JavaScript.. <br></span>
+ </div>
+</div>
+<div style=" width: 100%; 
+display: inline-block; margin: auto;
+position: relative; left: 21px;">
+    <div id="body_material">
+        <div id="item-1">
+            <div id="heading1" >
+                &lt;HTML/&gt; 
+                <br> CSS, JavaScript<br>
+            </div>  
+            <div id="para1">
+            <span>I am a self-taught web developer.<span> <span><br> Web Development with pure<span> <span><br> HTML, CSS JavaScript ...</span> 
+            </div>
+        </div>
+    <div id="item-2">
+         <div id="heading2">
+           Higher Education </div>
+        <div id="para2">
+        <span>Curently a student <br></span>
+        <span>in <br></span>
+        <span>Techno India University <br></span>
+        <span>B.Tech (CSE)</span>
+        </div>
+    </div>
+    <div id="item-3">
+        <div id="heading3">
+          Languages</div>
+        <div id="para3">
+        <span>Currently learning C and C++ <br></span>
+        <span>HTML, CSS, JavaScript <br></span>
+        </div>
+    </div>
+    </div>
+</div>
+<div id="bottom">
+<span>This page was built using pure HTML, CSS, JavaScript</span>
+<span>This is a self developed Webpage</span>
+<span>And all the rights of the elements of the Webpage is reserved to Souranil Chakraborty.</span>
+<span>For any thing related to the website Contact-</span>
+<span>| chakrabortysoura21@gmail.com | </span>
+</div>
+</body>
+</html>
